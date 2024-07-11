@@ -1,0 +1,128 @@
+/* ChatScreen.css */
+
+/* ChatScreen.css */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.chat-container h1 {
+  margin-bottom: 20px;
+}
+
+.chat-box {
+  width: 100%;
+  max-width: 1000px; /* Increased max-width for larger screens */
+  padding: 10px;
+  height: calc(100% - 160px); /* Adjusted height to make room for header and input */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f1f1f1; /* Added background color for better visibility */
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #fff;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 10px;
+  padding: 0 10px; /* Added padding for spacing */
+  box-sizing: border-box;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.sample-questions {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 10px; /* Added padding for spacing */
+  box-sizing: border-box;
+}
+
+.sample-questions h3 {
+  margin-bottom: 10px;
+}
+
+.sample-questions button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #f8f8f8;
+  color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sample-questions button:hover {
+  background-color: #e8e8e8;
+}
+
+.chat-message ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.chat-message li {
+  list-style-type: disc;
+}
